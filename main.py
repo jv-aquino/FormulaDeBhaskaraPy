@@ -42,6 +42,7 @@ if valido == True:
  #Calculando o valor de Δ (delta) e printando o mesmo 
  delta = b * b + (-4 * a * c)
  delta = delta**(0.5)
+ delta = delta.real
  delta = str(delta)
  print('\n' + 'Δ = ' + delta + ';')
  delta = float(delta)
