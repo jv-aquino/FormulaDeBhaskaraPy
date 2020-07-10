@@ -11,16 +11,16 @@ incognita = input('Fórmula de Bháskara(x = -b +- √b² -4.a.c / 2.a) em Pytho
 #Tentando transformar a incógnita em float, para depois verificar isso e evitar erros
 try:
  incognitaFloat = float(incognita)
- print(incognitaInvalida)
+ valido = False
 except ValueError:
- None
+ valido = True
 
 #Verificando se a incógnita tem só um valor, e se ele não é numérico, se algum dos casos for verdadeiro aparecerá um erro
-if (len(incognita)) > 1 or incognitaFloat == float:
+if (len(incognita)) > 1 or valido == False:
  valido = False
  print(incognitaInvalida)
 else:
- None
+ valido = True
 
 #Obtendo os próximos valores (a, b, c) caso tudo esteja correto
 if valido == True:
@@ -50,7 +50,7 @@ if valido == True:
  #Com o delta em mãos, calculando agora todo o resto, e finalmente, printando o resultado
  valorFinal1, valorFinal2 = (-b + delta) / (2 * a), (-b - delta) / (2 * a)
  valorFinal1, valorFinal2 = str(valorFinal1), str(valorFinal2)
- print(incognita + '₁ = ' + valorFinal1 + '; \n' + incognita + '₂ = ' + valorFinal2 + ';\nS = {' + valorFinal1 + '; ' + valorFinal2 + '}')
+ print(incognita + '¹ = ' + valorFinal1 + '; \n' + incognita + '₂ = ' + valorFinal2 + ';\nS = {' + valorFinal1 + '; ' + valorFinal2 + '}')
 
 #Caso um ou mais valores sejam inválidos, aparecerá uma mensagem de erro
 else:
