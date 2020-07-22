@@ -48,7 +48,7 @@ if valido == True:
  delta = float(delta)
 
  #Com o delta em mãos, calculando agora todo o resto, e finalmente, printando o resultado
- valorFinal1, valorFinal2 = (-b + delta) / (2 * a), (-b - delta) / (2 * a)
+ valorFinal1, valorFinal2 = (-1*b + delta) / (2 * a), (-1*b - delta) / (2 * a)
  valorFinal1, valorFinal2 = str(valorFinal1), str(valorFinal2)
  print(incognita + '¹ = ' + valorFinal1 + '; \n' + incognita + '₂ = ' + valorFinal2 + ';\nS = {' + valorFinal1 + '; ' + valorFinal2 + '}')
 
